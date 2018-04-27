@@ -15,12 +15,10 @@ Dependencies (python packages used): numpy, spectrum, soundfile, keras, tensorfl
 It is suggested that you create a virtual environment, install dependencies. Following that step, to run the experiments, activate your environment, cd to the 'scripts' folder and run in terminal:
 $python SingleRepeatedExperiment.py
 
-The results are written in data/results folder.
+The script performs 5 random experiments with random splits of train-validation sets (test set is fixed for all experiments). The results are written in data/results folder.
 
-If you would like to simply check quickly results produced for one sample run, example resulting files are available in the 'exampleResults' folder including:
+If you would like to simply check results produced for one sample run (5 learning experiments), example resulting files are available in the 'exampleResults' folder including:
 - png files: plots of learning curves (acc vs epoch#, loss vs epoch#) and ROC curves
 - _res.txt files: contains measures for the system including confusion matrix, sensitivity, specificity, F-measure, etc. 
 - other .txt files: log of experiments
-
-
-
+(files for each of the 5 experiments are shared)
