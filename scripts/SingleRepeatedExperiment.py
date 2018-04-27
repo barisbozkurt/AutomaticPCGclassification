@@ -44,6 +44,7 @@ urls['train']='https://www.physionet.org/physiobank/database/challenge/2016/trai
 urls['test']='https://www.physionet.org/physiobank/database/challenge/2016/validation.zip'
 
 #Dowloading Physionet train data
+print('Downloading Physionet data (200Mb) as zip files ... ')
 for dataCategory in urls.keys():
     targetDir=dataFolder+'/'+dataCategory
     if not os.path.exists(targetDir):
@@ -51,6 +52,7 @@ for dataCategory in urls.keys():
         url=urls[dataCategory]
         filename=url.split('/')[-1]
         #Downloading the zip file from the url
+        print('Downloading ',filename)
         urllib.request.urlretrieve(url,filename)
         #Unzipping to a specific folder
         zip_ref = zipfile.ZipFile(filename, 'r')
