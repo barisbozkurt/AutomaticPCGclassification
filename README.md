@@ -14,11 +14,13 @@ Run the code at your own risk and please cite the publication(citation to be upd
 Dependencies (python packages used): numpy, spectrum, soundfile, keras, tensorflow, matplotlib, scipy, gammatone, resampy. (list of packages in the environment used for testing is available in environmentPackages.txt)
 
 To run the experiments simply cd to the 'scripts' folder and run it in terminal:
->>python SingleRepeatedExperiment.py
+$python SingleRepeatedExperiment.py
 
 If you would like to check quickly results produced, example resulting files are available in the 'exampleResults' folder including:
-- plots of learning curves (acc vs epoch#, loss vs epoch#)
-- measures for the system with highest accuracy in validation set including 
-confusion matrix, sensitivity, specificity, F-measure, etc. 
+- png files: plots of learning curves (acc vs epoch#, loss vs epoch#) and ROC curves
+- _res.txt files: contains measures for the system including confusion matrix, sensitivity, specificity, F-measure, etc. 
+- other .txt files: log of experiments
+
+
 
 
