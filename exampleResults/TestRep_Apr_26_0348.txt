@@ -1,0 +1,29 @@
+Single-test repeated experiment
+Model name: uocSeq2, dba: Physionet
+Test started at: Thu Apr 26 03:48:43 2018
+-------------------------------------------------
+New test initiated: /home/baris/codes/Async4physionet/data//results/M_uocSeq2SubEnv64by16_nASyn2000len_1000hopt
+Feature: SubEnv64by16 using segmentation: none, size: fixed
+	periodSync:False, with window: tukey
+Training: /home/baris/codes/Async4physionet/data//results/M_uocSeq2SubEnv64by16_nASyn2000len_1000hopt_maj
+Number of frames/features: (train,validation,test): [101014, 18324, 5832]
+Train categories and number of samples: [0 1], [43744 57270]
+Model saved: epoch 0, accuracyOnValidation: 0.860020
+Model saved: epoch 1, accuracyOnValidation: 0.915084
+Model saved: epoch 2, accuracyOnValidation: 0.918086
+Model saved: epoch 3, accuracyOnValidation: 0.920105
+Model saved: epoch 4, accuracyOnValidation: 0.926217
+Model saved: epoch 5, accuracyOnValidation: 0.928127
+Model saved: epoch 7, accuracyOnValidation: 0.931456
+Model saved: epoch 8, accuracyOnValidation: 0.934567
+Model saved: epoch 13, accuracyOnValidation: 0.935986
+Model saved: epoch 19, accuracyOnValidation: 0.937677
+Model saved: epoch 20, accuracyOnValidation: 0.938660
+Model saved: epoch 28, accuracyOnValidation: 0.941770
+Model saved: epoch 34, accuracyOnValidation: 0.944008
+Model saved: epoch 42, accuracyOnValidation: 0.944117
+Model saved: epoch 47, accuracyOnValidation: 0.945427
+Results saved for /home/baris/codes/Async4physionet/data//results/M_uocSeq2SubEnv64by16_nASyn2000len_1000hopt_maj
+Thu Apr 26 09:41:40 2018
+-------------------------------------------------
+Test finished at: Thu Apr 26 09:41:40 2018
