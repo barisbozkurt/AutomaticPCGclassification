@@ -21,4 +21,4 @@ If you would like to simply check results produced for one sample run (5 learnin
 - png files: plots of learning curves (acc vs epoch#, loss vs epoch#) and ROC curves
 - _res.txt files: contains measures for the system including confusion matrix, sensitivity, specificity, F-measure, etc. 
 - other .txt files: log of experiments
-(files for each of the 5 experiments are shared)
+
