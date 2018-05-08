@@ -158,4 +158,4 @@ for i in range(numExperiments):
         #Run the tests: outputs will be put in the results folder
         singleTest.run()
         #Cleaning this test sessions' intermediate files
-        cleanFilesOfPrevSess([dataFolder])
+    cleanFilesOfPrevSess([dataFolder])
