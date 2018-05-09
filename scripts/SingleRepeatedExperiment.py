@@ -96,7 +96,7 @@ async2secSegments=Segmentation("None",periodSync=False,sizeType="fixed",frameSiz
 
 #Define features to be used
 features=[]#use of multiple features is possible, that's why we use a list here
-timeDim=64
+timeDim=32
 freqDim=16
 #This implementation uses only the sub-band envelopes feature
 # other features can be appended here
@@ -107,7 +107,7 @@ data=Data(dbaName,dataFolder,featureFolder,features,useBalancedData,splitRatios,
 #Defining NN model with a name. 
 #   Implementation is in models.py. Feel free to add your own models and 
 #   test by just changing the name here
-modelName='uocSeq2'
+modelName='uocSeq1'
 
 #Running random split and testing several times (1/testSetPercentage)
 # ex: if test set is 20%, tests will be repeated 5 times
