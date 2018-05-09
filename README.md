@@ -8,7 +8,7 @@ This is part of a larger code collection used for running all experiments(90 dis
 
 Run the code at your own risk and please cite the publication(citation to be updated upon acceptance) if you use this code in your own work. This repo is not aimed for distributing a well-designed code package but more for quickly sharing part of our code for readers of our manuscript who would like to learn implementation details. 
 
-Dependencies (python packages used): numpy, spectrum, soundfile, keras, tensorflow, matplotlib, scipy, gammatone, resampy. (list of packages in the environment used for testing is available in environmentPackages.txt)
+Dependencies (python packages used): numpy, spectrum, soundfile, keras, tensorflow, matplotlib, scipy, resampy, gammatone (https://github.com/detly/gammatone). (list of packages in the environment used for testing is available in environmentPackages.txt) 
 
 It is suggested that you create a virtual environment, install dependencies. Following that step, to run the experiments, activate your environment, cd to the 'scripts' folder and run in terminal:
 $python SingleRepeatedExperiment.py
@@ -22,4 +22,4 @@ If you would like to simply check results produced for one sample run (5 learnin
 - _res.txt files: contains measures for the system including confusion matrix, sensitivity, specificity, F-measure, etc. 
 - other .txt files: log of experiments
 
-Our manuscript discusses tests carried on 90 different settings (various segmentation strategies, feature types, dimensions, CNN models) on our proprietary PCG database. The ROCs for each system setting is shared in folder "results4allSystems_UocDba" which also includes sorting with respect to area under the ROC. All ROCs are computed via averaging results of 5 random experiments (since %20 of data is reserved as test data in each experiment).
+Our manuscript discusses tests carried on 90 different settings (various segmentation strategies, feature types, dimensions, CNN models) on our proprietary PCG database. The ROCs for each system setting is shared in folder "results4allSystems_UocDba" which also includes sorting with respect to area under the ROC. All ROCs are computed via averaging results of 5 random experiments (since %20 of data is reserved as test data in each experiment). Scripts folder includes a sample script for running tests for a number of different systems settings: RepeatedExperiment_8systems.py
