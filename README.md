@@ -1,6 +1,6 @@
 # Automatic heart sound classification for pathology detection
 
-This repository contains python implementation of one of the systems described in our submission under review:
+This repository contains python implementation of one of the systems described in:
 
 > Bozkurt, B., Germanakis, I., & Stylianou, Y. (2018). A study of time-frequency features for CNN-based automatic heart sound classification for pathology detection. Computers in Biology and Medicine, 100(July 2017), 132–143. http://doi.org/10.1016/j.compbiomed.2018.06.026.
 
