@@ -1,19 +1,19 @@
-# AutomaticPCGclassification - Beta version
+# Automatic heart sound classification for pathology detection
 
 This repository contains python implementation of one of the systems described in our submission under review:
 
-> Bozkurt, B., Germanakis, I., Stylianou, Y. A study of time-frequency features for CNN-based automatic heart sound classification for pathology detection, Under Review.
+> Bozkurt, B., Germanakis, I., & Stylianou, Y. (2018). A study of time-frequency features for CNN-based automatic heart sound classification for pathology detection. Computers in Biology and Medicine, 100(July 2017), 132–143. http://doi.org/10.1016/j.compbiomed.2018.06.026.
 
-This is part of a larger code collection used for running all experiments(90 distinct settings) defined in our submitted manuscript: system with settings: CNN classifier using feature of Sub-band envelopes computed from asyncronous frames extracted with length of 2 seconds and hop size of 1 second.  
+This is part of a larger code collection used for running all experiments(90 distinct settings) defined in our paper: system with settings: CNN classifier using feature of Sub-band envelopes computed from asyncronous frames extracted with length of 2 seconds and hop size of 1 second.  
 
-Run the code at your own risk and please cite the publication(citation to be updated upon acceptance) if you use this code in your own work. This repo is not aimed for distributing a well-designed code package but more for quickly sharing part of our code for readers of our manuscript who would like to learn implementation details. 
+Run the code at your own risk and please cite the publication if you use this code in your own work. This repo is not aimed for distributing a well-designed code package but more for quickly sharing part of our code for readers of our manuscript who would like to learn implementation details. 
 
 Dependencies (python packages used): numpy, spectrum, soundfile, keras, tensorflow, matplotlib, scipy, resampy, gammatone (https://github.com/detly/gammatone). (list of packages in the environment used for testing is available in environmentPackages.txt) 
 
 It is suggested that you create a virtual environment, install dependencies. Following that step, to run the experiments, activate your environment, cd to the 'scripts' folder and run in terminal:
 $python SingleRepeatedExperiment.py
 
-The script downloads data(~200Mb) from Physionet site (https://www.physionet.org/physiobank/database/challenge/2016/). Physionet data involves train and validation sets. Physionet-validation set is used as the test set. Physionet-train set is splitted to form train and validation sets. Data augmentation is applied to train and validation sets.
+The script downloads data(~200Mb) from Physionet site (https://www.physionet.org/physiobank/database/challenge/2016/) and runs the experiment. Physionet data involves train and validation sets. Physionet-validation set is used as the test set. Physionet-train set is splitted to form train and validation sets. Data augmentation is applied to train and validation sets.
 
 The script performs 5 random experiments with random splits of train-validation sets (test set is fixed for all experiments). The results are written in data/results folder.
 
